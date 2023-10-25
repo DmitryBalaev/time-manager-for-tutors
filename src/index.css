@@ -3,20 +3,22 @@
   transition: color .2s ease-in-out, background-color .2s ease-in-out;
 }
 html[data-theme='dark'] {
-  --text-color: #fffff1;
-  --background-color: #242424;
+  --text-app-colorr: #fffff1;
+  --background-app-color: #242424;
 }
 
 html[data-theme='light'] {
-  --text-color: #000001;
-  --background-color: #e1e1e1;
+  --text-app-color: #000001;
+  --background-app-color: #e1e1e1;
 }
 
 :root {
   font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color: var(--background-color);
+
+  color: var(--text-app-color);
+  background-color: var(--background-app-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
